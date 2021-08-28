@@ -10,42 +10,12 @@
     }
 }
 
-@mixin mobileC {
-    @media (max-width: $mobile-calendar) {
-        @content;
-    }
-}
 
-@mixin tabletC {
-    @media (max-width: $tablet-calendar) {
-        @content;
-    }
-}
-
-@mixin center-popup($top, $width){
-    position: absolute;
-    left: 50%;
-    top: $top;
-    width: $width;
-    transform: translate(-50%, 0);
-}
-
-@mixin popup($top, $left, $width){
-    position: fixed;
-    left: $left;
-    top: $top;
-    width: $width;
-    transform: translate(-50%, 0);
-}
 
 @mixin center{
     margin: 0 auto;
     width: fit-content;
-}
-
-@mixin image($url){
-    background-image: url($url);
-    background-size: fill;
+    text-align: center;
 }
 
 @mixin button($bg, $color, $font-size, $border-radius){
