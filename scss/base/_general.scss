@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+body{
+    font-family: $font-content;
+    background-image: url('images/paper.jpg');
+    background-size: cover;
+}
+
+

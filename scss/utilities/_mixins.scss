@@ -1,0 +1,59 @@
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mobileC {
+    @media (max-width: $mobile-calendar) {
+        @content;
+    }
+}
+
+@mixin tabletC {
+    @media (max-width: $tablet-calendar) {
+        @content;
+    }
+}
+
+@mixin center-popup($top, $width){
+    position: absolute;
+    left: 50%;
+    top: $top;
+    width: $width;
+    transform: translate(-50%, 0);
+}
+
+@mixin popup($top, $left, $width){
+    position: fixed;
+    left: $left;
+    top: $top;
+    width: $width;
+    transform: translate(-50%, 0);
+}
+
+@mixin center{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+@mixin image($url){
+    background-image: url($url);
+    background-size: fill;
+}
+
+@mixin button($bg, $color, $font-size, $border-radius){
+    font-size: $font-size;
+    color: $color;
+    background-color: $bg;
+    border: none;
+    border-radius: $border-radius;
+    width: fit-content;
+    text-decoration: none;
+}
